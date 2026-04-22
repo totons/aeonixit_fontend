@@ -74,7 +74,7 @@
   font-family: var(--font-mono);
   font-size: 72px;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: #ff0000;
   opacity: 0.08;
   line-height: 1;
   min-width: 120px;
