@@ -1,0 +1,263 @@
+.caseStudies {
+  background-color: var(--bg-off-white);
+}
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-inline);
+}
+
+/* Page Header */
+.pageHeader {
+  background: linear-gradient(135deg, #F7F5F2 0%, #FAFAF8 100%);
+  padding: var(--spacing-4xl) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pageHeader h1 {
+  font-size: var(--fs-h1);
+  margin-bottom: var(--spacing-lg);
+  max-width: 70ch;
+}
+
+.pageHeader p {
+  font-size: var(--fs-h3);
+  color: var(--text-secondary);
+  font-weight: 400;
+  max-width: 70ch;
+}
+
+/* Studies List */
+.studiesList {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--surface-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.studyRow {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: var(--spacing-2xl);
+  align-items: start;
+  padding: var(--spacing-2xl) 0;
+  border-bottom: 1px solid var(--border-color);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--trans-normal);
+}
+
+.studyRow:last-child {
+  border-bottom: none;
+}
+
+.studyRow:hover {
+  background-color: var(--hover-overlay);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  margin: 0 calc(-1 * var(--spacing-lg));
+}
+
+.studyRow:hover h3 {
+  color: var(--accent-slate);
+}
+
+.studyRow:hover .arrow {
+  transform: translateX(4px);
+}
+
+.studyNumber {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+}
+
+.studyContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.studyContent h3 {
+  font-size: var(--fs-h2);
+  margin: 0;
+  color: var(--text-primary);
+  transition: color var(--trans-normal);
+}
+
+.studyContent p {
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: var(--lh-relaxed);
+  max-width: 70ch;
+}
+
+.studyTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: var(--fs-caption);
+  border: 1px solid var(--border-color);
+  padding: 0.3rem 0.6rem;
+  color: var(--text-secondary);
+  display: inline-block;
+  transition: all var(--trans-normal);
+}
+
+.studyRow:hover .tag {
+  border-color: var(--accent-slate);
+  color: var(--accent-slate);
+}
+
+.studyMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-sm);
+  padding-top: 3px;
+}
+
+.year {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.arrow {
+  display: inline-block;
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  transition: transform var(--trans-fast), color var(--trans-normal);
+}
+
+.studyRow:hover .arrow {
+  color: var(--accent-slate);
+}
+
+/* Bottom Text */
+.bottomText {
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+  background-color: var(--bg-off-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bottomText p {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* CTA Banner */
+.ctaBanner {
+  background: linear-gradient(135deg, var(--accent-slate) 0%, #405A7B 100%);
+  color: var(--surface-white);
+  padding: var(--spacing-4xl) 0;
+  text-align: center;
+}
+
+.ctaBanner h2 {
+  color: var(--surface-white);
+  font-size: var(--fs-h1);
+  margin-bottom: var(--spacing-md);
+}
+
+.ctaBanner p {
+  font-size: var(--fs-h3);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: var(--fs-body);
+  color: var(--surface-white);
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--surface-white);
+  text-decoration: none;
+  transition: all var(--trans-normal);
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: var(--surface-white);
+  color: var(--accent-slate);
+}
+
+.ctaButton .arrow {
+  display: inline-block;
+  transition: transform var(--trans-fast);
+}
+
+.ctaButton:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pageHeader {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .pageHeader h1 {
+    font-size: var(--fs-h2);
+  }
+
+  .pageHeader p {
+    font-size: var(--fs-body);
+  }
+
+  .studiesList {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .studyRow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+  }
+
+  .studyRow:hover {
+    padding: var(--spacing-lg) 0;
+    margin: 0;
+  }
+
+  .studyContent h3 {
+    font-size: var(--fs-h3);
+  }
+
+  .studyContent p {
+    font-size: var(--fs-small);
+  }
+
+  .studyMeta {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ctaBanner {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .ctaBanner h2 {
+    font-size: var(--fs-h2);
+  }
+
+  .ctaBanner p {
+    font-size: var(--fs-body);
+  }
+}

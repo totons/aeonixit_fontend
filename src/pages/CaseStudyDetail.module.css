@@ -1,0 +1,419 @@
+.caseStudyDetail {
+  background-color: var(--bg-off-white);
+}
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-inline);
+}
+
+/* Page Header */
+.pageHeader {
+  background: linear-gradient(135deg, #F7F5F2 0%, #FAFAF8 100%);
+  padding: var(--spacing-4xl) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb {
+  font-size: var(--fs-caption);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  font-family: var(--font-mono);
+}
+
+.pageHeader h1 {
+  font-size: var(--fs-h1);
+  margin-bottom: var(--spacing-md);
+  max-width: 85ch;
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--text-secondary);
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+/* Hero Visual */
+.heroVisual {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--surface-white);
+}
+
+.visualPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.08) 0%, rgba(44, 62, 80, 0.04) 100%);
+  border: 1px solid var(--border-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.caption {
+  font-size: var(--fs-caption);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  margin: 0;
+}
+
+/* Summary Section */
+.summary {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--surface-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: var(--spacing-3xl);
+  align-items: start;
+}
+
+.summaryText p {
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+  max-width: 70ch;
+}
+
+.factsSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.factsBox {
+  padding-left: var(--spacing-lg);
+  border-left: 3px solid var(--accent-slate);
+  padding-top: var(--spacing-sm);
+}
+
+.factsBox h4 {
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.factsBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.factsBox li {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+}
+
+.factsBox p {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Challenge Section */
+.challengeSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--bg-off-white);
+}
+
+.challengeSection h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--spacing-2xl);
+  max-width: 85ch;
+}
+
+.sectionBody {
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+  max-width: 75ch;
+  margin: 0;
+}
+
+/* Approach Section */
+.approachSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--surface-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.approachSection h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.processSteps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.processStep {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background-color: var(--bg-off-white);
+  border-left: 2px solid var(--accent-slate);
+}
+
+.stepNumber {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--accent-slate);
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.stepContent h4 {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--text-primary);
+}
+
+.stepContent p {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Build Section */
+.buildSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--bg-off-white);
+}
+
+.buildSection h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.buildVisuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.visual {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.06) 0%, rgba(44, 62, 80, 0.03) 100%);
+  border: 1px solid var(--border-color);
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+.halfWidth {
+  aspect-ratio: 4 / 3;
+}
+
+/* Outcome Section */
+.outcomeSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--surface-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.outcomeSection h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.metricsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-2xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.metric {
+  text-align: center;
+}
+
+.metricNumber {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--accent-slate);
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.metricLabel {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Reflections */
+.reflectionsSection {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--bg-off-white);
+}
+
+.reflection {
+  font-size: var(--fs-body);
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+  font-style: italic;
+  max-width: 75ch;
+  margin: 0;
+  padding: var(--spacing-lg);
+  border-left: 3px solid var(--accent-slate);
+}
+
+/* Navigation */
+.navigation {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--surface-white);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.backLink,
+.nextLink {
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--trans-normal);
+}
+
+.backLink:hover,
+.nextLink:hover {
+  color: var(--accent-slate);
+}
+
+/* CTA Banner */
+.ctaBanner {
+  background: linear-gradient(135deg, var(--accent-slate) 0%, #405A7B 100%);
+  color: var(--surface-white);
+  padding: var(--spacing-4xl) 0;
+  text-align: center;
+}
+
+.ctaBanner h2 {
+  color: var(--surface-white);
+  font-size: var(--fs-h1);
+  margin-bottom: var(--spacing-md);
+}
+
+.ctaBanner p {
+  font-size: var(--fs-h3);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: var(--fs-body);
+  color: var(--surface-white);
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--surface-white);
+  text-decoration: none;
+  transition: all var(--trans-normal);
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: var(--surface-white);
+  color: var(--accent-slate);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform var(--trans-fast);
+}
+
+.ctaButton:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .summaryGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .pageHeader h1 {
+    font-size: var(--fs-h2);
+  }
+
+  .challengeSection,
+  .approachSection,
+  .buildSection,
+  .outcomeSection,
+  .reflectionsSection,
+  .navigation {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .challengeSection h2,
+  .approachSection h2,
+  .buildSection h2,
+  .outcomeSection h2 {
+    font-size: var(--fs-h3);
+  }
+
+  .buildVisuals {
+    grid-template-columns: 1fr;
+  }
+
+  .fullWidth,
+  .halfWidth {
+    grid-column: 1;
+  }
+
+  .metricsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .navItems {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaBanner {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .ctaBanner h2 {
+    font-size: var(--fs-h2);
+  }
+
+  .ctaBanner p {
+    font-size: var(--fs-body);
+  }
+}
