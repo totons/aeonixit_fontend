@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './Work.module.css';
+import { Link } from 'react-router-dom';
 
 const Work = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const Work = () => {
     {
       title: 'Real-Time Analytics Platform',
       client: 'Internal Product',
+      link:"https://www.northway.cloud/",
       year: '2024',
       description: 'A real-time data visualization dashboard built from the ground up. Processes 50M+ events daily with sub-second latency. Interactive charts, custom dashboards, predictive insights. Used by data teams at Series B+ SaaS companies for real-time decision making.',
       challenge: 'Legacy analytics tools couldn\'t handle event volume. Teams waited hours for insights. Need: ingest 50M events/day, serve query results in <500ms, real-time collaborative dashboards.',
@@ -27,6 +29,7 @@ const Work = () => {
     {
       title: 'E-Commerce Platform Modernization',
       client: 'Mid-Market SaaS',
+      link:"https://ruposhee.com/",
       year: '2023',
       description: 'Migrated a legacy PHP monolith (built in 2008) to a modern Next.js stack. Eliminated 15 years of technical debt. Zero downtime across 500k active users. Cut server infrastructure costs by 60% and page load time from 4 seconds to 600ms.',
       challenge: 'Aging codebase made feature development painful. Server costs spiraling. Page load times driving conversion loss. Risk: migration would break for 500k users. Required: complete rewrite without downtime.',
@@ -44,6 +47,7 @@ const Work = () => {
     {
       title: 'Mobile Warehouse Inventory System',
       client: 'International Logistics',
+      link:"https://www.datasoft.icu/admin/login/?next=/admin/",
       year: '2023',
       description: 'Mobile-first inventory management system deployed across 5 warehouses on 3 continents. 200+ workers using barcode scanning. Real-time alerts. Reduced manual data entry by 95%, stockouts by 70%, picking time by 40%.',
       challenge: 'Manual spreadsheet tracking causing $2M in annual losses (expired inventory, stockouts, picking delays). 200 warehouse workers across multiple locations. Needed: offline-first app, barcode scanning, real-time sync.',
@@ -61,6 +65,7 @@ const Work = () => {
     {
       title: 'SaaS Customer Onboarding Platform',
       client: 'B2B SaaS Company',
+      link:"",
       year: '2022',
       description: 'Automated customer onboarding system. Reduced new customer setup time from 2 weeks to 48 hours. Self-service setup flows, automated data migration, guided interactive tours. Used by 500+ customers.',
       challenge: 'Each new customer took 2 weeks to onboard manually. Support team bottleneck. Needed: self-service setup, automated data import from multiple formats, interactive product tours.',
@@ -78,6 +83,7 @@ const Work = () => {
     {
       title: 'Startup Consulting Marketplace MVP',
       client: 'Founder-Led Startup',
+      link:"https://nextgenproperties.bd/",
       year: '2022',
       description: 'Built marketplace connecting expert consultants with businesses seeking advice. Payment processing, rating system, scheduling, video calls. Launched MVP in 8 weeks. Now doing $2M annual GMV.',
       challenge: 'Founder had idea but zero technical team. Needed: marketplace platform with payments, ratings, scheduling, video capability. Tight timeline: get to market in 8 weeks.',
@@ -106,7 +112,7 @@ const Work = () => {
       <section className={styles.workList}>
         <div className={styles.container}>
           {workItems.map((item, index) => (
-            <div key={index} className={`${styles.workItem} reveal`}>
+            <Link to={item.link} key={index} className={`${styles.workItem} reveal`}>
               <div className={styles.workImage}>
                 {item.thumbnail}
               </div>
@@ -150,7 +156,7 @@ const Work = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
