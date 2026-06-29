@@ -58,7 +58,7 @@ const Contact = () => {
 
               <div className={`${styles.infoBlock} reveal`}>
                 <h3>Address</h3>
-                <p>Kazi Para, Second Road<br />Jashore, Bangladesh</p>
+                <p>Kazi Para, Second Road<br />Dhaka, Bangladesh</p>
               </div>
 
               <div className={`${styles.infoBlock} reveal`}>
