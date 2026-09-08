@@ -38,7 +38,7 @@ const Footer = () => {
               <a href="mailto:ceo@aeonixit.com" className={styles.email}>
                 ceo@aeonixit.com
               </a>
-              <p className={styles.address}>Kazi Para, Second Road · Dhaka, Bangladesh</p>
+              <p className={styles.address}>House 21, Flat 19/B, Level 9, Road 1, Sector 06, House Building, Uttara, Dhaka-1230</p>
             </div>
           </div>
         </div>
